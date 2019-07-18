@@ -6,8 +6,9 @@ describe "As a registered user, I can login, enter my device And authenticate wi
   end
   context "when visiting /login, I am redirected to the amazon LWA" do
     it "enter my credentials and authorize my alexa device" do
+      visit dashboard_path
 
-      visit "/login"
+      click_on "Register Your Alexa Device"
 
       expect(current_path).to eq(dashboard_path)
       expect(user.token).to_not eq(nil)

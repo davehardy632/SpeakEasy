@@ -1,0 +1,48 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/davehardy632/turing/3module/projects/SpeakEasy/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/davehardy632/turing/3module/projects/SpeakEasy/app/models/user.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/davehardy632/turing/3module/projects/SpeakEasy/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/davehardy632/turing/3module/projects/SpeakEasy/app/controllers/dashboard_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/davehardy632/turing/3module/projects/SpeakEasy/app/controllers/application_controller.rb": [
+        1,
+        null
+      ]
+    },
+    "timestamp": 1563479151
+  }
+}
