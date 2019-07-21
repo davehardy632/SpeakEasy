@@ -9,7 +9,7 @@ class WebhooksController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:build_status, :build_state, :commit_messages, :creator)
+    params.require(:message).permit(:build_status, :build_state, :commit_log, :creator)
   end
 
 end
