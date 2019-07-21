@@ -6,6 +6,7 @@ class WebhooksController < ApplicationController
 
   end
 
+  private
 
   def message_params
     params.require(:message).permit(:build_status, :build_state, :commit_messages, :creator)
