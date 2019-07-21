@@ -11,5 +11,4 @@ class WebhooksController < ApplicationController
     require 'pry'; binding.pry
     params.require(:message).permit(:build_status, :build_state, :commit_log, :creator)
   end
-
 end
