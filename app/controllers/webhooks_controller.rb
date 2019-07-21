@@ -8,6 +8,6 @@ class WebhooksController < ApplicationController
   private
 
   def message_params
-    params.permit(:build_status, :build_state, :commit_log, :creator)
+    params.permit(:build_status, :build_state, :commit_messages, :creator)
   end
 end
