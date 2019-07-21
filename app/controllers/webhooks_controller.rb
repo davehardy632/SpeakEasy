@@ -1,6 +1,5 @@
 class WebhooksController < ApplicationController
   def index
-    require 'pry'; binding.pry
     message = Message.new(message_params)
     message.save
 
@@ -9,6 +8,7 @@ class WebhooksController < ApplicationController
   private
 
   def message_params
+    require 'pry'; binding.pry
     params.require(:message).permit(:build_status, :build_state, :commit_log, :creator)
   end
 
