@@ -3,4 +3,5 @@ class Message < ApplicationRecord
                         :build_state,
                         :commit_messages,
                         :creator
+                        
 end
