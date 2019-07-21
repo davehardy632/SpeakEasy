@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2019_07_21_210612) do
   create_table "messages", force: :cascade do |t|
     t.string "build_status"
     t.string "build_state"
-    t.text "commit_log"
+    t.text "commit_messages"
     t.string "creator"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
