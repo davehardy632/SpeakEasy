@@ -81,3 +81,9 @@ Things you may want to cover:
 * ...
 * ...
 * ...
+
+
+webhook[:event]
+webhook[:build][:state]
+webhook[:build][:message]
+webhook[:build][:creator][:name]
