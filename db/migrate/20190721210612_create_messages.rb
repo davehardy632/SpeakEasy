@@ -3,7 +3,7 @@ class CreateMessages < ActiveRecord::Migration[5.2]
     create_table :messages do |t|
       t.string :build_status
       t.string :build_state
-      t.text :commit_log
+      t.text :commit_messages
       t.string :creator
 
       t.timestamps
