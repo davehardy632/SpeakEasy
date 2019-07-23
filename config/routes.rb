@@ -9,4 +9,10 @@ Rails.application.routes.draw do
       get '/messages', to: "messages#index"
     end
   end
+
+  namespace :api do
+    namespace :v1 do
+      get '/shoutouts', to: "shoutouts#index"
+    end
+  end
 end
