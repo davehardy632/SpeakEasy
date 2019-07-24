@@ -5,6 +5,11 @@ class Message < ApplicationRecord
                         :creator
 
 
-  def self.recent_by_hours(hours)
+  def self.previous_messages(how_many_previous)
+    Message.last(how_many_previous.to_i)
+  end
+
+  def self.find_all_by_parameter(params)
+    where(params)
   end
 end
