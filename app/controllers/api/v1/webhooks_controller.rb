@@ -1,4 +1,4 @@
-class WebhooksController < ApplicationController
+class Api::V1::WebhooksController < ApplicationController
   def index
     message = Message.new(message_params)
     message.save
