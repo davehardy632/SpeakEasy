@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get '/messages', to: "messages#index"
+      get '/messages/find', to: "messages#show"
     end
   end
 

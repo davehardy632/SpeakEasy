@@ -25,9 +25,9 @@ ActiveRecord::Schema.define(version: 2019_07_23_230532) do
   end
 
   create_table "shoutouts", force: :cascade do |t|
-    t.string "sender"
-    t.string "sent_to"
-    t.string "message"
+    t.string "user_name"
+    t.string "text"
+    t.string "command"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
