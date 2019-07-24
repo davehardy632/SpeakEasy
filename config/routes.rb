@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get '/messages', to: "messages#index"
       get '/recent_messages', to: "messages#recent"
+      get '/messages/find', to: "messages#show"
       post '/shoutouts', to: 'shoutouts#create'
     end
   end
