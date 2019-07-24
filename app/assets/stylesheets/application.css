@@ -13,9 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
- body {
-   background: url('alexa.png');
-   background-repeat: no-repeat;
-   background-attachment: fixed;
- }
