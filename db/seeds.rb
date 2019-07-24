@@ -3,6 +3,7 @@ require 'factory_bot_rails'
 include FactoryBot::Syntax::Methods
 
 Message.destroy_all
+Shoutout.destroy_all
 
 create(:message,
        build_status: "build.running",
@@ -93,3 +94,7 @@ create(:message,
        created_at: "Sun, 21 Jul 2019 23:21:05 UTC +00:00",
        updated_at: "Sun, 21 Jul 2019 23:21:05 UTC +00:00"
      )
+
+     Shoutout.create!(sender: "Billy", sent_to: "David", message: "this is a shoutout wow!, its working!!")
+     Shoutout.create!(sender: "James", sent_to: "Billy", message: "Hello billy, this is a cordial shoutout")
+     Shoutout.create!(sender: "David", sent_to: "Jamesz", message: "Shoutout to all my homies")
