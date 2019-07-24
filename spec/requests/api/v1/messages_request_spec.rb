@@ -32,7 +32,8 @@ describe 'Messages Api' do
     expect(messages["data"].count).to eq(2)
     expect(messages["data"][0]["attributes"]["creator"]).to eq("John")
     expect(messages["data"][0]["attributes"]["commit_messages"]).to eq("hello there is a new commit waiting")
-
+  end
+  
   it "sends a messages from a specified creator" do
     message_1 = create(:message, commit_messages: "hello there is a new commit waiting", creator: "John")
     message_2 = create(:message, commit_messages: "hello there is a new commit waiting again", creator: "Ted")
