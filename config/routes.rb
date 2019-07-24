@@ -18,4 +18,6 @@ Rails.application.routes.draw do
       get '/shoutouts', to: "shoutouts#index"
     end
   end
+
+  get '/', to: 'welcome#index'
 end
