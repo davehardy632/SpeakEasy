@@ -14,6 +14,8 @@ Users can hear Github commit messages or branch names involved with merges, as w
 * "Return message from [name]" --> Returns messages by that person
 * "Shoutouts from [username]" --> Returns shoutouts (from Slack) from that person
 * "Newest shoutout" --> Returns newest shoutout
+* Slack Command "/shoutout [person and message]" shoutout to a person from Slack to Alexa
+* Slack Command "/gitmessage" Ask alexa for git messages from Slack 
 
 ## REQUIREMENTS
 Ruby version
