@@ -32,4 +32,6 @@ RSpec.describe Message do
     expect(message.commit_messages).to eq(attributes[:commit_messages])
     expect(message.creator).to eq(attributes[:creator])
   end
+
+  
 end
