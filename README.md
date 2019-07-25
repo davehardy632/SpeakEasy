@@ -11,7 +11,6 @@ Users can hear Github commit messages or branch names involved with merges, as w
 * "Alexa Speakeasy" --> Invotion statement to tell Alexa to stand by for sub-commands
 * "Count workflow messages" --> Outputs a number of deployment messages (one for running and one for finished each merge)
 * "Newest workflow message" --> Most recent deployment message
-* "Return message from [name]" --> Returns messages by that person
 * "Shoutouts from [username]" --> Returns shoutouts (from Slack) from that person
 * "Newest shoutout" --> Returns newest shoutout
 * Slack Command "/shoutout [person and message]" shoutout to a person from Slack to Alexa
