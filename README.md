@@ -1,13 +1,19 @@
 # README
 
 ## DESCRIPTION
-Welcome to Speakeasy! This is a [Turing School of Software and Design](https://turing.io/) project that facilitates and adds fun to remote team workflow. The project is based on requirements found [here](https://backend.turing.io/module3/projects/terrificus)
+Welcome to Speakeasy! This is a [Turing School of Software and Design](https://turing.io/) project that facilitates and adds fun to remote team workflow. The project is based on requirements found [here](https://backend.turing.io/module3/projects/terrificus).
+
+The project revolves around sending deployment webhooks and Slack commands to a Rails database, and then retreiving information from that database via Amazon Skills and Alexa devices or Slack.
+
+Users can hear Github commit messages or branch names involved with merges, as well as add shoutouts to their teams.
 
 
+## REQUIREMENTS
 Ruby version
-* 2.4.1
+* [Ruby 2.4.1](https://www.ruby-lang.org/en/downloads/)
+* [Ruby 2.4.1](https://rubygems.org/gems/rails/versions/5.2.3)
   
-System dependencies
+## System dependencies
 * gem 'figaro'
 * gem 'faraday'
 * gem 'rspec-rails'
