@@ -6,6 +6,6 @@ class Shoutout < ApplicationRecord
 
 
   def self.find_all_by_parameter(params)
-    where(user_name: params.keys.first.capitalize)
+    where(params)
   end
 end

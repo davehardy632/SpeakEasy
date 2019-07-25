@@ -36,7 +36,7 @@ describe 'Messages Api' do
     expect(messages["data"][1]["attributes"]["commit_messages"]).to eq(message_4.commit_messages)
   end
 
-  xit "sends a messages from a specified creator" do
+  it "sends a messages from a specified creator" do
     message_1 = create(:message, commit_messages: "hello there is a new commit waiting", creator: "John")
     create(:message, commit_messages: "hello there is a new commit waiting again", creator: "Ted")
     create(:message, commit_messages: "hello there is a new commit waiting for a third time", creator: "Lauren")
@@ -53,7 +53,7 @@ describe 'Messages Api' do
     expect(message["data"][0]["attributes"]["commit_messages"]).to eq(message_1.commit_messages)
   end
 
-  xit "sends messages based on build state" do
+  it "sends messages based on build state" do
     message_1 = create(:message, commit_messages: "hello there is a new commit waiting",                  creator: "John",   build_state: "passed")
     create(:message, commit_messages: "hello there is a new commit waiting again",            creator: "Ted",    build_state: "failed")
     message_3 = create(:message, commit_messages: "hello there is a new commit waiting for a third time", creator: "Lauran", build_state: "passed")
@@ -71,7 +71,7 @@ describe 'Messages Api' do
     expect(message["data"][1]["attributes"]["build_state"]).to eq(message_3.build_state)
   end
 
-  xit "sends messages based on build state" do
+  it "sends messages based on build status" do
     create(:message, commit_messages: "hello there is a new commit waiting", creator: "John", build_state: "passed")
     message_2 = create(:message, commit_messages: "hello there is a new commit waiting again", creator: "Ted", build_state: "failed", build_status: "finished")
     create(:message, commit_messages: "hello there is a new commit waiting for a third time", creator: "Lauren")
