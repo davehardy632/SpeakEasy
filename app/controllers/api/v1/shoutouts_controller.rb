@@ -1,15 +1,15 @@
-class Api::V1::ShoutoutsController < ApplicationController
+class Api::V1::ShoutoutsController < Api::V1::ApiBaseController
 
   def index
     render json: ShoutoutSerializer.new(Shoutout.all)
   end
-  
+
   def create
     Shoutout.create!(slack_params)
-    Faraday.post(params[:response_url], "{'text': 'Plz Wait like 5 minutes'}")
+    Faraday.post(params[:response_url], "{'text': 'Plz Wait 5 minutes'}")
   end
 
-  private 
+  private
 
   def slack_params
     params.permit(:user_name, :text, :command )

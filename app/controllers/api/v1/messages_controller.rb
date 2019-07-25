@@ -1,4 +1,4 @@
-class Api::V1::MessagesController < ApplicationController
+class Api::V1::MessagesController < Api::V1::ApiBaseController
 
   def index
     render json: MessageSerializer.new(Message.all)
@@ -7,7 +7,7 @@ class Api::V1::MessagesController < ApplicationController
   def show
     render json: MessageSerializer.new(Message.find_all_by_parameter(previous_params))
   end
-  
+
   def recent
     render json: MessageSerializer.new(Message.previous_messages(previous_params[:previous]))
   end
