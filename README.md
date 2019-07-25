@@ -32,3 +32,5 @@ Github: https://github.com/james-cape/speakeasy_webhook_passthrough
 
 Rails app: https://arrogant-loon-34609.herokuapp.com/
 Github: https://github.com/davehardy632/SpeakEasy
+
+![Speakeasy flow diagram](https://arrogant-loon-34609.herokuapp.com/assets/welcome/flow.png)
