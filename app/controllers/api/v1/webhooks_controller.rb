@@ -1,8 +1,9 @@
-class Api::V1::WebhooksController < ApplicationController
+class Api::V1::WebhooksController < Api::V1::ApiBaseController
+
   def index
     message = Message.new(message_params)
     message.save
-
+    render status: 201, json: {}
   end
 
   private

@@ -32,4 +32,24 @@ describe 'Shoutouts Api' do
     expect(message["data"][0]["attributes"]["user_name"]).to eq(shoutout_1.user_name)
     expect(message["data"][0]["attributes"]["text"]).to eq(shoutout_1.text)
   end
+
+  it "sends a shoutout to the database" do
+    shoutout_1 = Shoutout.create!(user_name: "Billy", command: "David", text: "this is a shoutout wow!, its working!!")
+    shoutout_2 = Shoutout.create!(user_name: "Billy", command: "David", text: "this is a shoutout wow!, its working!!")
+    shoutout_3 = Shoutout.create!(user_name: "Billy", command: "David", text: "this is a shoutout wow!, its working!!")
+
+    shoutout_params = {
+      user_name: "Billy",
+      command: "Make",
+      text: "good",
+      response_url: "https://www.google.com/"
+    }
+
+    post '/api/v1/shoutouts', params: shoutout_params
+
+    expect(response).to be_successful
+
+    expect(Shoutout.count).to eq(4)
+    expect(Shoutout.last.user_name).to eq(shoutout_params[:user_name])
+  end
 end

@@ -11,6 +11,7 @@ class Api::V1::ShoutoutsController < Api::V1::ApiBaseController
   def create
     Shoutout.create!(slack_params)
     Faraday.post(params[:response_url], "{'text': 'Plz Wait 5 minutes'}")
+
   end
 
   private
