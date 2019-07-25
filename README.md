@@ -1,4 +1,9 @@
 # README
+
+## DESCRIPTION
+Welcome to Speakeasy! This is a [Turing School of Software and Design](https://turing.io/) project that facilitates and adds fun to remote team workflow. The project is based on requirements found [here](https://backend.turing.io/module3/projects/terrificus)
+
+
 Ruby version
 * 2.4.1
   
