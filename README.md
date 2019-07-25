@@ -6,21 +6,22 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-
+  2.4.1
+  
 * System dependencies
-
-* Configuration
-
-* Database creation
-
+  gem 'figaro'
+  gem 'faraday'
+  gem 'rspec-rails'
+  
 * Database initialization
-
+  rails db:{drop,create,migrate,seed}
+  
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
+  Rspec
+  
 * Deployment instructions
-
+  Start 3 separate web apps and buy an Alexa. Go to the Alexa Skill Store and download our skill. Use Alexa skill to interact with slack and get your commit messages to your Alexa
+  
 Dummy for merges:
 Heroku: https://quiet-basin-56396.herokuapp.com/
 Github: https://github.com/james-cape/dummy_speakeasy
