@@ -19,7 +19,7 @@ Users can hear Github commit messages or branch names involved with merges, as w
 ## REQUIREMENTS
 Ruby version
 * [Ruby 2.4.1](https://www.ruby-lang.org/en/downloads/)
-* [Ruby 2.4.1](https://rubygems.org/gems/rails/versions/5.2.3)
+* [Rails 5.2.3](https://rubygems.org/gems/rails/versions/5.2.3)
   
 ## Dependencies
 ```
