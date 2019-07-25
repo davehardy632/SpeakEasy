@@ -4,6 +4,8 @@ include FactoryBot::Syntax::Methods
 
 Message.destroy_all
 Shoutout.destroy_all
+Encouragement.destroy_all
+
 
 create(:message,
        build_status: "build.running",
@@ -94,6 +96,15 @@ create(:message,
        created_at: "Sun, 21 Jul 2019 23:21:05 UTC +00:00",
        updated_at: "Sun, 21 Jul 2019 23:21:05 UTC +00:00"
      )
+
+     Message.create!(build_status: "build.running", build_state: "running", commit_messages: "commit message number 1", creator: "James")
+     Message.create!(build_status: "build.finished", build_state: "passed", commit_messages: "Second commit message", creator: "David")
+     Message.create!(build_status: "build.running", build_state: "running", commit_messages: "third commit message", creator: "Billy")
+     Message.create!(build_status: "build.passed", build_state: "passed", commit_messages: "fourth commit message", creator: "John")
+     Message.create!(build_status: "build.running", build_state: "running", commit_messages: "fifth commit message", creator: "Billy")
+     Message.create!(build_status: "build.running", build_state: "running", commit_messages: "sixth commit message", creator: "Lauren")
+     Message.create!(build_status: "build.passed", build_state: "passed", commit_messages: "seventh commit message", creator: "Joseph")
+     Message.create!(build_status: "build.passed", build_state: "passed", commit_messages: "eighth commit message", creator: "Spike Johnson")
 
 create(:encouragement, creator: "user_01", motivation: "Nice job!")
 create(:encouragement, creator: "user_02", motivation: "This merge sparks joy!")
