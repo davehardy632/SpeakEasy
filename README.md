@@ -14,12 +14,14 @@ Ruby version
 * [Ruby 2.4.1](https://rubygems.org/gems/rails/versions/5.2.3)
   
 ## System dependencies
-* gem 'figaro'
-* gem 'faraday'
-* gem 'rspec-rails'
+```
+gem 'figaro'
+gem 'faraday'
+gem 'rspec-rails'
+```
   
 Database initialization
-* rails db:{drop,create,migrate,seed}
+`rails db:{drop,create,migrate,seed}`
   
 How to run the test suite
 * `$ rspec`
