@@ -1,0 +1,15 @@
+List of files in zipfile
+Stored file name:Base/Config/newrelic.yml
+Original path:/Users/jamescape/turing/3module/SpeakEasy/config/newrelic.yml
+
+Stored file name:Ruby/Config/Gemfile.lock
+Original path:/Users/jamescape/turing/3module/SpeakEasy/Gemfile.lock
+
+Stored file name:Ruby/Config/Gemfile
+Original path:/Users/jamescape/turing/3module/SpeakEasy/Gemfile
+
+Stored file name:nrdiag-filelist.txt
+Original path:./nrdiag-filelist.txt
+
+Stored file name:nrdiag-output.json
+Original path:./nrdiag-output.json
