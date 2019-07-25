@@ -1,4 +1,4 @@
-class Api::V1::ShoutoutsController < ApiBaseController
+class Api::V1::ShoutoutsController < Api::V1::ApiBaseController
 
   def index
     render json: ShoutoutSerializer.new(Shoutout.all)

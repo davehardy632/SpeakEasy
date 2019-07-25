@@ -1,4 +1,4 @@
-class Api::V1::MessagesController < ApiBaseController
+class Api::V1::MessagesController < Api::V1::ApiBaseController
 
   def index
     render json: MessageSerializer.new(Message.all)
