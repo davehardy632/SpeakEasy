@@ -41,8 +41,11 @@ describe 'Messages Api' do
     create(:message, commit_messages: "hello there is a new commit waiting again", creator: "Ted")
     create(:message, commit_messages: "hello there is a new commit waiting for a third time", creator: "Lauren")
 
+    message_params = {
+      john: nil
+    }
 
-    get "/api/v1/messages/find?creator=#{message_1.creator}"
+    get "/api/v1/messages/find?", params: message_params
 
     expect(response).to be_successful
 
@@ -51,39 +54,5 @@ describe 'Messages Api' do
     expect(message["data"].count).to eq(1)
     expect(message["data"][0]["attributes"]["creator"]).to eq(message_1.creator)
     expect(message["data"][0]["attributes"]["commit_messages"]).to eq(message_1.commit_messages)
-  end
-
-  it "sends messages based on build state" do
-    message_1 = create(:message, commit_messages: "hello there is a new commit waiting",                  creator: "John",   build_state: "passed")
-    create(:message, commit_messages: "hello there is a new commit waiting again",            creator: "Ted",    build_state: "failed")
-    message_3 = create(:message, commit_messages: "hello there is a new commit waiting for a third time", creator: "Lauran", build_state: "passed")
-
-    get "/api/v1/messages/find?build_state=passed"
-
-    expect(response).to be_successful
-
-    message = JSON.parse(response.body)
-
-    expect(message["data"].count).to eq(2)
-    expect(message["data"][0]["attributes"]["creator"]).to eq(message_1.creator)
-    expect(message["data"][0]["attributes"]["build_state"]).to eq(message_1.build_state)
-    expect(message["data"][1]["attributes"]["creator"]).to eq(message_3.creator)
-    expect(message["data"][1]["attributes"]["build_state"]).to eq(message_3.build_state)
-  end
-
-  it "sends messages based on build status" do
-    create(:message, commit_messages: "hello there is a new commit waiting", creator: "John", build_state: "passed")
-    message_2 = create(:message, commit_messages: "hello there is a new commit waiting again", creator: "Ted", build_state: "failed", build_status: "finished")
-    create(:message, commit_messages: "hello there is a new commit waiting for a third time", creator: "Lauren")
-
-    get "/api/v1/messages/find?build_status=finished"
-
-    expect(response).to be_successful
-
-    message = JSON.parse(response.body)
-
-    expect(message["data"].count).to eq(1)
-    expect(message["data"][0]["attributes"]["creator"]).to eq(message_2.creator)
-    expect(message["data"][0]["attributes"]["build_status"]).to eq(message_2.build_status)
   end
 end
