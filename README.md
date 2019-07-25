@@ -23,14 +23,15 @@ Things you may want to cover:
   - Start 3 separate web apps and buy an Alexa. Go to the Alexa Skill Store and download our skill. Use Alexa skill to interact with slack and get your commit messages to your Alexa
   
 Dummy for merges:
-Heroku: https://quiet-basin-56396.herokuapp.com/
-Github: https://github.com/james-cape/dummy_speakeasy
+* Heroku: https://quiet-basin-56396.herokuapp.com/
+* Github: https://github.com/james-cape/dummy_speakeasy
 
 Flask passthrough app:
-Heroku: https://shielded-mountain-70953.herokuapp.com
-Github: https://github.com/james-cape/speakeasy_webhook_passthrough
+* Heroku: https://shielded-mountain-70953.herokuapp.com
+* Github: https://github.com/james-cape/speakeasy_webhook_passthrough
 
-Rails app: https://arrogant-loon-34609.herokuapp.com/
-Github: https://github.com/davehardy632/SpeakEasy
+Rails app: 
+* Heroku: https://arrogant-loon-34609.herokuapp.com/
+* Github: https://github.com/davehardy632/SpeakEasy
 
 ![Speakeasy flow diagram](https://arrogant-loon-34609.herokuapp.com/assets/welcome/flow.png)
