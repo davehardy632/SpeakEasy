@@ -1,26 +1,20 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-  2.4.1
+Ruby version
+* 2.4.1
   
-* System dependencies
-  - gem 'figaro'
-  - gem 'faraday'
-  - gem 'rspec-rails'
+System dependencies
+* gem 'figaro'
+* gem 'faraday'
+* gem 'rspec-rails'
   
-* Database initialization
-  - rails db:{drop,create,migrate,seed}
+Database initialization
+* rails db:{drop,create,migrate,seed}
   
-* How to run the test suite
-  - Rspec
+How to run the test suite
+* `$ rspec`
   
-* Deployment instructions
-  - Start 3 separate web apps and buy an Alexa. Go to the Alexa Skill Store and download our skill. Use Alexa skill to interact with slack and get your commit messages to your Alexa
+Deployment instructions
+* Start 3 separate web apps and buy an Alexa. Go to the Alexa Skill Store and download our skill. Use Alexa skill to interact with slack and get your commit messages to your Alexa
   
 **Dummy repo for merges:**
 * Heroku: https://quiet-basin-56396.herokuapp.com/
