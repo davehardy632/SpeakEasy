@@ -46,7 +46,7 @@ RSpec.describe Message do
 
   it 'retrieves messages by parameter' do
     params = {
-      john: nil
+     creator: "John" 
     }
     message_1 = create(:message, commit_messages: "hello there is a new commit waiting",                  creator: "John",   created_at: Time.now - (6 * 60 * 60))
     message_2 = create(:message, commit_messages: "hello there is a new commit in line",                  creator: "John",   created_at: Time.now - (5 * 60 * 60))

@@ -10,6 +10,6 @@ class Message < ApplicationRecord
   end
 
   def self.find_all_by_parameter(params)
-    Message.where(creator: params.keys.first.capitalize)
+    Message.where(params)
   end
 end

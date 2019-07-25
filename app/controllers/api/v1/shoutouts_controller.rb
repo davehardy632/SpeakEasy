@@ -5,7 +5,7 @@ class Api::V1::ShoutoutsController < Api::V1::ApiBaseController
   end
 
   def show
-    render json: ShoutoutSerializer.new(Shoutout.find_all_by_parameter(params))
+    render json: ShoutoutSerializer.new(Shoutout.find_all_by_parameter(slack_params))
   end
 
   def create
