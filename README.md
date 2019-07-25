@@ -22,11 +22,11 @@ Things you may want to cover:
 * Deployment instructions
   - Start 3 separate web apps and buy an Alexa. Go to the Alexa Skill Store and download our skill. Use Alexa skill to interact with slack and get your commit messages to your Alexa
   
-Dummy for merges:
+Dummy repo for merges:
 * Heroku: https://quiet-basin-56396.herokuapp.com/
 * Github: https://github.com/james-cape/dummy_speakeasy
 
-Flask passthrough app:
+Flask webhook api passthrough app:
 * Heroku: https://shielded-mountain-70953.herokuapp.com
 * Github: https://github.com/james-cape/speakeasy_webhook_passthrough
 
