@@ -97,14 +97,15 @@ create(:message,
        updated_at: "Sun, 21 Jul 2019 23:21:05 UTC +00:00"
      )
 
-     Message.create!(build_status: "build.running", build_state: "running", commit_messages: "commit message number 1", creator: "James")
-     Message.create!(build_status: "build.finished", build_state: "passed", commit_messages: "Second commit message", creator: "David")
-     Message.create!(build_status: "build.running", build_state: "running", commit_messages: "third commit message", creator: "Billy")
-     Message.create!(build_status: "build.passed", build_state: "passed", commit_messages: "fourth commit message", creator: "John")
-     Message.create!(build_status: "build.running", build_state: "running", commit_messages: "fifth commit message", creator: "Billy")
-     Message.create!(build_status: "build.running", build_state: "running", commit_messages: "sixth commit message", creator: "Lauren")
-     Message.create!(build_status: "build.passed", build_state: "passed", commit_messages: "seventh commit message", creator: "Joseph")
-     Message.create!(build_status: "build.passed", build_state: "passed", commit_messages: "eighth commit message", creator: "Spike Johnson")
+
+     Shoutout.create!(text: "Shoutout to all my homies", command: "commit message number 1", user_name: "James")
+     Shoutout.create!(text: "shoutout to my group, we have a stand up meeting at 10", command: "Second commit message", user_name: "David")
+     Shoutout.create!(text: "Shoutout to all my homies", command: "third commit message", user_name: "Billy")
+     Shoutout.create!(text: "shoutout to my group, we have a stand up meeting at 10", command: "fourth commit message", user_name: "John")
+     Shoutout.create!(text: "Shoutout to all my homies", command: "fifth commit message", user_name: "Billy")
+     Shoutout.create!(text: "Shoutout to all my homies", command: "sixth commit message", user_name: "Lauren")
+     Shoutout.create!(text: "shoutout to my group, we have a stand up meeting at 10", command: "seventh commit message", user_name: "Joseph")
+     Shoutout.create!(text: "shoutout to my group, we have a stand up meeting at 10", command: "eighth commit message", user_name: "Spike Johnson")
 
 create(:encouragement, creator: "user_01", motivation: "Nice job!")
 create(:encouragement, creator: "user_02", motivation: "This merge sparks joy!")
