@@ -9,18 +9,18 @@ Things you may want to cover:
   2.4.1
   
 * System dependencies
-  gem 'figaro'
-  gem 'faraday'
-  gem 'rspec-rails'
+  - gem 'figaro'
+  - gem 'faraday'
+  - gem 'rspec-rails'
   
 * Database initialization
-  rails db:{drop,create,migrate,seed}
+  - rails db:{drop,create,migrate,seed}
   
 * How to run the test suite
-  Rspec
+  - Rspec
   
 * Deployment instructions
-  Start 3 separate web apps and buy an Alexa. Go to the Alexa Skill Store and download our skill. Use Alexa skill to interact with slack and get your commit messages to your Alexa
+  - Start 3 separate web apps and buy an Alexa. Go to the Alexa Skill Store and download our skill. Use Alexa skill to interact with slack and get your commit messages to your Alexa
   
 Dummy for merges:
 Heroku: https://quiet-basin-56396.herokuapp.com/
