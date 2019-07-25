@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get '/shoutouts', to: "shoutouts#index"
+      get '/shoutouts/find', to: "shoutouts#show"
     end
   end
 
