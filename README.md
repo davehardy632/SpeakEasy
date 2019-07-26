@@ -8,7 +8,7 @@ The project revolves around sending deployment webhooks and Slack commands to a 
 Users can hear Github commit messages or branch names involved with merges, as well as add shoutouts to their teams.
 
 ## COMMANDS
-* "Alexa Speakeasy" --> Invotion statement to tell Alexa to stand by for sub-commands
+* "Alexa Speakeasy" --> Invocation statement to tell Alexa to stand by for sub-commands
 * "Count workflow messages" --> Outputs a number of deployment messages (one for running and one for finished each merge)
 * "Newest workflow message" --> Most recent deployment message
 * "Shoutouts from [username]" --> Returns shoutouts (from Slack) from that person
